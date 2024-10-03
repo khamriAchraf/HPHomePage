@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="fog-element"></div>
+    <img
+      src="https://www.avalanchesoftware.com/wp-content/themes/avl/images/Horizontal-Compressed.jpg"
+      alt=""
+      class="img"
+    />
+    <div class="content">
+      <button>Appah</button>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.fog.min.js"></script>
+    <script>
+      VANTA.FOG({
+        el: "#fog-element",
+        mouseControls: false,
+        touchControls: false,
+        gyroControls: false,
+        minHeight: 200,
+        minWidth: 200,
+        highlightColor: 0x54646b,
+        midtoneColor: 0x314e63,
+        lowlightColor: 0x172f49,
+        blurFactor: 0.5,
+        speed: 0.5,
+        zoom: 1.5,
+      });
+    </script>
+  </body>
+</html>
